@@ -1,0 +1,122 @@
+*{
+	padding: 0;
+}
+body{
+	background-color: #FFFBC2;
+	padding-top: 7%;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+}
+div#calendar{
+	display: flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items: center;
+}
+div#month{
+	display: flex;
+	justify-content:space-around;
+	align-items: center;
+	height: 3%;
+	width: 100%;
+	background: linear-gradient(90deg, yellow, green 40%, yellow);
+}
+div#calendar table tr:nth-child{
+	background-color: #f2f2f2;
+}
+div#calendar table thead{
+	margin-bottom: 5px;
+}
+div#calendar table,th{
+	border: 0.1px solid lightgrey;
+	padding: 20px;
+}
+div#calendar table td{
+	padding:8px;
+	text-align: right;
+	padding-right: 15px;
+}
+td:hover{
+	background-color: #B1E8E7;
+}
+tr:hover{
+	background-color: #f5f5f5;
+}
+td:target{
+	background-color: green;
+}
+div#month button{
+	font-size: 20px;
+	padding: 5px;
+	background: transparent;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	transition:0.1s;
+}
+div#month button:hover{
+	transform: scale(1.2, 1.2) rotate(1turn);
+}
+div#today{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	align-items:center;
+	justify-content:space-around;
+	border: 0.1px solid lightgrey;
+	/*border: 2px solid black;*/
+}
+/*div#today button{
+	font-size: 15px;
+	height: 30px;
+	width: 70px;
+	background-color: #E87F3C;
+}
+div#today button:hover{
+	background-color: #F16A15;
+	content: '&#187;';
+}*/
+div#today button#yo {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+  padding: 7px;
+  width: 90px;
+  transition: all 0.5s;
+  cursor: pointer;
+  /*margin: 5px;*/
+}
+
+div#today button#yo span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+div#today button#yo span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+div#today button#yo:hover span {
+  padding-right: 25px;
+}
+
+div#today button#yo:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+@media (max-width: 720px) {
+	body{
+		padding-top: 12%;
+	}
+}

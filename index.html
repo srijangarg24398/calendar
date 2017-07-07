@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calendar</title>
+	<link rel="stylesheet" type="text/css" href="calendar.css">
+</head>
+<body>
+	<div id="calendar">
+		<div id="month">
+			<button class="btn" id="prevyear">&#171;</button>
+			<button class="btn" id="prevmonth">&#8249;</button>
+			<h3 id="date"></h3>
+			<button class="btn" id="nextmonth">&#8250;</button>
+			<button class="btn" id="nextyear">&#187;</button>
+
+		</div>
+		<table>
+			<thead>
+				<th>Sun</th>
+				<th>Mon</th>
+				<th>Tue</th>
+				<th>Wed</th>
+				<th>Thu</th>
+				<th>Fri</th>
+				<th>Sat</th>
+			</thead>
+			<tbody>
+				  <colgroup>
+				    <col style="background-color: #f00">
+				    <col span="2">
+				  </colgroup>
+				<tr>
+					<td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+				</tr>
+				<tr>
+					<td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+				</tr>
+				<tr>
+					<td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+				</tr>
+				<tr>
+					<td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+				</tr>
+				<tr>
+					<td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+				</tr>
+				<tr>
+					<td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+				</tr>
+
+			</tbody>
+		</table>
+		<div id="today"><button id="yo"><span>Today</span></button><h3 id="currdate"></h3></div>
+	</div>
+</body>
+<script type="text/javascript" src="calendar.js"></script>
+</html>
